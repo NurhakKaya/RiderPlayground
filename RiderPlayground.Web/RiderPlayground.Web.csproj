@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RiderPlayground.Common\RiderPlayground.Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Components\" />
+      <Folder Include="Composers\" />
+      <Folder Include="Context\" />
+      <Folder Include="Controllers\MVC\" />
+      <Folder Include="Controllers\Render\" />
+      <Folder Include="Controllers\Surface\" />
+      <Folder Include="Extensions\" />
+      <Folder Include="Helpers\" />
+      <Folder Include="Middleware\" />
+      <Folder Include="Models\ModelsBuilder\" />
+      <Folder Include="Models\ViewModel\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Umbraco.Cms.Core" Version="16.0.0" />
+      <PackageReference Include="Umbraco.Cms.Web.Website" Version="16.0.0" />
+    </ItemGroup>
+
+</Project>
